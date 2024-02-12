@@ -1,0 +1,35 @@
+#process > p {
+    width: 50%;
+    margin-inline: auto;
+}
+
+.info__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info {
+    background: var(--color-white-1);
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: var(--transition);
+    margin: 1rem;
+}
+
+.info:hover {
+    box-shadow: .5rem .5rem .5rem var(--color-black);
+}
+
+.info__image {
+    margin-bottom: 1rem;
+}
+
+.info p {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .info__container {
+        grid-template-columns: 1fr;
+    }
+}
